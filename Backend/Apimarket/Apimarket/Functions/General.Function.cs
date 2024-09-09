@@ -32,6 +32,7 @@ namespace Apimarket.Functions
                     configServer.Email, configServer.Password);
                 smtpClient.EnableSsl = true;
 
+
                 MailAddress remitente = new MailAddress(configServer.Email, "Apimarket",
                     Encoding.UTF8);
                 MailAddress destinatario = new MailAddress(EmailDestination);
